@@ -99,7 +99,7 @@ const krPplNetChart = new Chart(krPplNetChartRender, {
         plugins: {
             datasource: {
                 // Cross Origin Request(CORS) from local storage is prohibited, use live-server to run a hotload test server and load this CSV file via HTTP.
-                url: './db/kr_population_net_1970_2021.csv',
+                url: '../db/kr_population_net_1970_2021.csv',
                 type: 'csv',
                 rowMapping: 'dataset',
                 datasetLabels: false,
@@ -190,7 +190,7 @@ const krPplMarriageChart = new Chart(krPplMarriageChartRender, {
         plugins: {
             datasource: {
                 // Cross Origin Request(CORS) from local storage is prohibited, use live-server to run a hotload test server and load this CSV file via HTTP.
-                url: './db/kr_population_marriage_1970_2021.csv',
+                url: '../db/kr_population_marriage_1970_2021.csv',
                 type: 'csv',
                 rowMapping: 'dataset',
                 datasetLabels: false,
@@ -259,7 +259,7 @@ const krPplLifeChart = new Chart(krPplLifeChartRender, {
         plugins: {
             datasource: {
                 // Cross Origin Request(CORS) from local storage is prohibited, use live-server to run a hotload test server and load this CSV file via HTTP.
-                url: './db/kr_population_life_expectancy_1970_2020.csv',
+                url: '../db/kr_population_life_expectancy_1970_2020.csv',
                 type: 'csv',
                 rowMapping: 'dataset',
                 datasetLabels: false,
@@ -348,7 +348,7 @@ const krPplProjTotalChart = new Chart(krPplProjTotalChartRender, {
         plugins: {
             datasource: {
                 // Cross Origin Request(CORS) from local storage is prohibited, use live-server to run a hotload test server and load this CSV file via HTTP.
-                url: './db/kr_population_projection_total_population_2020_2070.csv',
+                url: '../db/kr_population_projection_total_population_2020_2070.csv',
                 type: 'csv',
                 rowMapping: 'dataset',
                 datasetLabels: false,
@@ -423,7 +423,7 @@ const krPplProjRateChart = new Chart(krPplProjRateChartRender, {
         plugins: {
             datasource: {
                 // Cross Origin Request(CORS) from local storage is prohibited, use live-server to run a hotload test server and load this CSV file via HTTP.
-                url: './db/kr_population_projection_increase_rate_2020_2070.csv',
+                url: '../db/kr_population_projection_increase_rate_2020_2070.csv',
                 type: 'csv',
                 rowMapping: 'dataset',
                 datasetLabels: false,
@@ -508,7 +508,7 @@ const krPplProjProdChart = new Chart(krPplProjProdChartRender, {
         plugins: {
             datasource: {
                 // Cross Origin Request(CORS) from local storage is prohibited, use live-server to run a hotload test server and load this CSV file via HTTP.
-                url: './db/kr_population_projection_productive_population_2020_2070.csv',
+                url: '../db/kr_population_projection_productive_population_2020_2070.csv',
                 type: 'csv',
                 rowMapping: 'dataset',
                 datasetLabels: false,
