@@ -1,0 +1,17 @@
+{
+  "name": "dataviz-exercise-1",
+  "version": "1.0.0",
+  "description": "Data visualization exercise project 1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "devfreedom",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.1.6"
+  },
+  "dependencies": {
+    "node-pandas-js": "^1.0.7"
+  }
+}

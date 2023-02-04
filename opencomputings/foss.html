@@ -1,0 +1,128 @@
+<!doctype html>
+<html class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Opencomputings</title>
+  <link href="./dist/output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <script src="./js/index.js" defer></script>
+</head>
+
+<body>
+  <header class="fixed z-20 bg-white flex place-content-center w-full h-16 tablet:h-16 laptop:h-20 drop-shadow-lg tablet:drop-shadow-lg laptop:drop-shadow-lg">
+    <div id="header-container" class="flex justify-between w-full bg-white px-3 tablet:w-full tablet:px-7 laptop:w-3/5 laptop:min-w-[1280px]">
+      <div id="header-logo" class="w-[280px]">
+        <a href="./index.html"><img class="h-full object-contain" src="./img/header-logo-global.svg"></a>
+      </div>
+
+      <div id="header-menu-laptop" class="hidden tablet:hidden laptop:flex flex-row justify-around items-center w-3/5 font-open-sans">
+        <a href="./foss.html">FREE AND OPEN SOURCE</a>
+        <a href="./catalogue.html">CATALOGUE</a>
+        <a href="./resources.html">RESOURCES</a>
+        <a href="https://devfreedom.github.io/opencomputings-blog">BLOG</a>
+        <a href="./about.html">ABOUT</a>
+      </div>
+      <div id="menu-open-btn" class="flex flex-col laptop:hidden justify-center space-y-1.5 mx-2" onClick="openMenu();">
+        <div class="w-7 h-[2px] bg-gray-600"></div>
+        <div class="w-7 h-[2px] bg-gray-600"></div>
+        <div class="w-7 h-[2px] bg-gray-600"></div>
+      </div>
+      
+      <div id="menu-close-btn" class="hidden laptop:hidden justify-center items-center mx-2" onClick="closeMenu();">
+        <h1 class="text-slate-500">CLOSE ×<h1>
+      </div>
+    </div>
+  </header>
+
+  <div id="header-menu-mobile" class="z-30 fixed flex flex-col hidden laptop:hidden justify-center items-center justify-around w-full h-96 mt-16 bg-white drop-shadow-xl py-10 font-open-sans">
+    <a href="./foss.html">FREE AND OPEN SOURCE</a>
+    <a href="./catalogue.html">CATALOGUE</a>
+    <a href="./resources.html">RESOURCES</a>
+    <a href="https://devfreedom.github.io/opencomputings-blog">BLOG</a>
+    <a href="./about.html">ABOUT</a>
+  </div>
+
+  <div id="header-spacer" class="bg-white h-16 tablet:h-16 laptop:h-20"></div>
+
+  <div id="titlecard-container" class="w-full flex bg-[url('./img/titlecard-foss-bg.jpg')] bg-cover bg-center" text="Photo of open window by Katerina Pavlyuchkova">
+    <div id="titlecard-headlines" class="flex flex-col justify-center w-full ml-7 tablet:ml-10 laptop:ml-36 my-24 tablet:my-36 laptop:my-36">
+      <div class="flex flex-col tablet:flex-col laptop:flex-row">
+        <h1 class="font-lato text-white font-black text-3xl tablet:text-5xl laptop:text-6xl mt-1">FREE AND&nbsp;</h1>
+        <h1 class="font-lato text-white font-black text-3xl tablet:text-5xl laptop:text-6xl mt-1">OPEN SOURCE</h1>
+      </div>
+      <div class="flex flex-col mt-5">
+        <h2 class="font-fira-sans text-white font-semibold text-xl tablet:text-2xl laptop:text-3xl">Let's have a 5-minute read on</h2>
+        <h2 class="font-fira-sans text-white font-semibold text-xl tablet:text-2xl laptop:text-3xl">what "free and open source" means.</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-white h-16 tablet:h-20 laptop:h-24"></div>
+  <div id="article-container" class="flex flex-col items-center justify-center w-full bg-white">
+    <div id="article-wrapper" class="flex flex-col tablet:flex-row-reverse laptop:flex-row-reverse items-center justify-center w-11/12 tablet:w-10/12 laptop:w-3/5 laptop:min-w-[1280px] px-3 tablet:px-10 laptop:px-10 bg-white font-lato">
+      <div id="intro1-paragraph" class="flex flex-col justify-center w-full tablet:w-fit laptop:w-fit text-md tablet:text-lg laptop:text-xl text-left font-open-sans leading-relaxed">
+        <h3 class="bg-gradient-to-r bg-clip-text from-sky-500 to-indigo-700 text-transparent font-bold text-3xl tablet:text-4xl laptop:text-5xl pb-10">What's a computer?</h3>
+
+        <p class="">We briefly mentioned some things like software, hardware, and source code. Now it's time to elaborate a little bit more.</p>
+        <P class="mt-5">First, what's a computer? Computer is a machine that can be programmed to compute logic or arithmetic automatically. If a computer does such computing electronically, not mechanically like cogs and wheels, then it's a digital computer. A modern digital computer is made of softwares and hardwares that can process and store information, through inputs and outputs.</p>
+
+        <h3 class="text-blue-500 font-bold text-2xl tablet:text-3xl laptop:text-3xl mt-7 py-3">Software</h3>
+
+        <p class="mt-5"> Software is a set of instruction to perform a certain task. The task here can by anything, from simply showing a text "hello!" to running a complicated scientific simulation. Any computer program we use on your desktop and laptop is software. Any mobile application we use every day is software. The fundamental software that runs all other softwares is also software and we call it "operating system", notably Windows, Android, Linux, and iOS.</p>
+        <p class="mt-5">Now back to "a set of instruction". For instance, an alarm clock app would need instructions like "check the current time, and if it's 3:30pm then play a ding-dong sound". To make your phone perform this, we humans have to write this instruction and put it inside your phone. This "human-readable version" of instructions written in a structured programming language is called "source code".</p>
+        <p class="mt-5">Every software is made of many lines of source code, again, instructions. Your computing device takes this given source code, and transforms it into "machine-readable" instructions so that they, not us, can understand and follow it as-is. This is how software works.</p>
+        <p class="mt-5">Software doesn't have a physical form. It exists virtually and runs digitally inside your device, so it's flexible, hence "soft"ware. We can easily change and control it because it's just a set of orders that we feed to the computer.</p>
+        <h3 class="text-blue-500 font-bold text-2xl tablet:text-3xl laptop:text-3xl mt-7 py-3">Hardware</h3>
+        <p class="mt-5">Hardware is a set of physical parts of your computer. Your smartphone is a hardware. It is made of smaller hardwares like camera sensor, touchscreen display, battery, and central processing unit. Each hardware is ready-made to perform a specific task. Camera sensor is built to accept the light coming through a lens, nothing else. Central processing unit is there to do the major digital calculation and computation and that's it. We can't change its purpose and function after it's made. This is why we call it "hard"ware.</p>
+        <p class="mt-5">Hardwares can't do anything by itself because it is not linked to the software we had written. So hardwares also need a software that runs the hardware itself and interact with other softwares. This middleman software is called "firmware" because it's neither fully hard nor fully soft, just in between. It connects the hardware with another software that needs the hardware's function.</p>
+        <h3 class="text-blue-500 font-bold text-2xl tablet:text-3xl laptop:text-3xl mt-7 py-3">Yin and Yang</h3>
+        <p class="mt-5">Hardware is a philharmonic concert hall full of musical instruments. Software is a conductor and musical instrument players. Computer needs both to play a music. Hardwares enable softwares, softwares utilize hardwares. Without hardwares, your softwares can't take action because there is no physical setting for that. Without softwares, your hardwares can't function because there is no operator for that.</p>
+
+        <h3 class="bg-gradient-to-r bg-clip-text from-sky-500 to-indigo-700 text-transparent font-bold text-3xl tablet:text-4xl laptop:text-5xl mt-16 py-3">Source matters</h3>
+
+        <p class="mt-5">Now we can finally talk about what the word "open" means in computers and computing.</p>
+        <p class="mt-5">Remember what source code is? Source code is a set of instruction written in a human-readable programming language. Source code is the most original and essential element to make a software. It's a blueprint of how the software is supposed to operate.</p>
+        <p class="mt-5">Just like creative works such as artwork, literature, and choreography, source code itself and the software built from it are intellectual creation so it is protected under the copyright law. You cannot see, use, share, and change the source code and the software without the creator's legal permission. The term "proprietary software" is used to describe such private, restricted, and protected software and its source code. Even though the source code is available, either partially or wholly, either to the public or few select people, it is still considered proprietary if there is a restriction in public use, modification, and distribution.<p>
+        <h3 class="text-blue-500 font-bold text-2xl tablet:text-3xl laptop:text-3xl mt-7 py-3">Open to the public</h3>
+        <p class="mt-5">Open source means the creator of the software &mdash; who is also a copyright holder &mdash; allows anyone to see and share the source code for any purpose. There are different sets of permissions that define what is allowed to do with the source code, and we call it "license". For example, an open source license called MIT License looks like this.<p></p>
+        <div class="flex flex-col align-center items-center m-10">
+          <div class="w-full bg-slate-100 p-10">
+          <p>Copyright (c) [year] [copyright holders]</p>
+          <p class="mt-5">Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+          <p class="mt-5">The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p> 
+          <p class="mt-5">THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+          </div>
+        </div>
+        <p>The key point of the concept "open source" is public availability and accessibility of the source code. Open source licenses guarantees the access to the source code for anyone to freely see, audit, share, and study it. But when it comes to its use, modification, redistribution, and derivative works, certain open source licenses might restrict some of the freedom you can do with it.</p>
+        <p class="mt-5">Open, is not equal to freedom.</p>
+        <h3 class="text-blue-500 font-bold text-2xl tablet:text-3xl laptop:text-3xl mt-7 py-3">Free as in freedom</h3>
+        <p class="mt-5">"Free software" is a term for open source softwares which its creator ensures everyone to audit, study, use, modify, redistribute, improve the software and its source code for any purpose, via "free software license". Generally, free software licenses ensure wider range of freedom compared to open source licenses, except when the license enforces your derivative work to have the same license. This clause is known as "copyleft" which is an opposing concept to "copyright". Copyleft license is invented to encourage collaborative prosperity of free softwares, but some people might find this restrictive. In this sense, the "freedom" here is not indulgence but philosophical orientation.</p>
+        <p class="mt-5"><a href="https://en.wikipedia.org/wiki/Free_software_movement" class="underline italic text-slate-500 mt-5">See also: Free software and its philosophy</a></p>
+        <p class="mt-5">Note that the word "free" here doesn't mean "free of charge". Most free softwares are available for free because of its philanthropistic nature, but there are commercial for-profit free softwares as well. Keep in mind, this "free" means "freedom". This is probably the biggest difference between open source software and free software. Free software strongly emphasizes on freedom.</p>
+        <h3 class="text-blue-500 font-bold text-2xl tablet:text-3xl laptop:text-3xl mt-7 py-3">Hardware can be open too</h3>
+        <p class="mt-5">Previously we talked about what hardware is. How can hardware be open? As you already know, hardware is made of physical parts and has a tangible form. So open source hardware means not only the software that runs such hardware is open to public, but also hardware's electronical and mechanical structure is. Usually detailed circuitry, schematic, and assembly is documented and published along with the source code. So if you have components and equipments ready, you can build the hardware by yourself. Due to the cost, complexity and difficulty of hardware making process, open source hardwares are less common and accessible than open source softwares. But Opencomputings is here to provide easy-to-digest information about entry-level open source hardwares that we all can use.</p>
+
+        <h3 class="bg-gradient-to-r bg-clip-text from-sky-500 to-indigo-700 text-transparent font-bold text-3xl tablet:text-4xl laptop:text-5xl mt-16 py-3">Class dismissed!</h3>
+        <p class="mt-5">Thank you for reading to the end! We hope it wasn't too lengthy or difficult to understand. Opencomputings covers the variety of free and/or open source softwares and hardwares, so we'd like use "open computing" as an umbrella term to describe the use of all of that. Now can you see where our name came from?</p>
+        <p class="mt-5">Since you have essential knowledge about what free and open source is, it's time to get your hands on using free and open source softwares and hardwares, starting from what's the most interesting and easiest for you, step by step!</p>
+
+      </div>
+    </div>
+  </div>
+  <div class="bg-white h-16 tablet:h-60 laptop:h-72"></div>
+
+  <footer class="flex place-content-center w-full h-16 tablet:h-16 laptop:h-20 bg-gray-100 drop-shadow-lg tablet:drop-shadow-xl laptop:drop-shadow-xl">
+    <div id="footer-container" class="flex flex-row justify-between content-around px-7 w-full tablet:w-full laptop:w-3/5 laptop:min-w-[1280px] text-slate-500">
+      <div id="copyright" class="flex w-fit justify-start items-center">
+        <p>© 2022 Opencomputings</p>
+      </div>
+    <div id="footer-menu-laptop" class="flex flex-row justify-end justify-between items-center w-2/5 tablet:w-2/6 laptop:w-1/5 font-fira-sans">
+      <a href="https://www.linkedin.com/in/junsubkim">LinkedIn</a>
+      <a href="https://www.github.com/devfreedom">GitHub</a>
+    </div>
+  </footer>
+</body>
+</html>
